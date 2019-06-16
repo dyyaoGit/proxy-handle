@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.use('/api', proxy({
-    target: 'http://192.168.3.342',
+    target: 'http://192.168.3.342:8080',
     changeOrigin: true,
     pathRewrite: {
       '/api': '/'
